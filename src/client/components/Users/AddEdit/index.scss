@@ -1,0 +1,26 @@
+.passwordRequired {
+  div.has-feedback {
+    &.has-success,
+    &.has-error {
+      .password-input {
+        input {
+          padding-right: 45px !important;
+        }
+        i {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+.form-actions-bottom {
+  margin-top: 20px;
+}
+
+.ant-card-head {
+  background-color: #eee;
+  .ant-card-head-title {
+    font-weight: bold;
+  }
+}

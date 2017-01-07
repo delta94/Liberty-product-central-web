@@ -1,0 +1,21 @@
+mutation findItemNumber($searchText: String!, $itemClass: String!) {
+  findItemNumber(searchText: $searchText, itemClass: $itemClass) {
+    itemClass
+    itemNumber
+    itemDescription
+    cubes
+    dimensions
+    FOB
+    FOB_M
+    DROPSHIP
+    DROPSHIP_M
+    DROPSHIP_X
+    LEVEL0
+    LEVEL1
+    LEVEL2
+    LEVEL3
+    MIX_FULL
+    MIX_HALF
+    MIX_QTR
+  }
+}

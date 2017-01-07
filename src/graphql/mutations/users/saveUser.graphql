@@ -1,0 +1,16 @@
+mutation saveUser($data: UserInput!) {
+  saveUser(data: $data) {
+    id
+    firstName
+    lastName
+    fullName
+    email
+    active
+    role
+    vendor {
+      id
+      name
+      logo
+    }
+  }
+}

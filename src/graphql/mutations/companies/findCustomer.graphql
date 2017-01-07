@@ -1,0 +1,9 @@
+mutation findCustomer($searchText: String!) {
+  findCustomer(searchText: $searchText) {
+    customers {
+      Customer_Name
+      Customer_Number
+    }
+    totalRows
+  }
+}

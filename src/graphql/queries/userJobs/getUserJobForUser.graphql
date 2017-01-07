@@ -1,0 +1,26 @@
+query getUserJobsForUser {
+  getUserJobsForUser {
+    id
+    userId
+    vendorId
+    uuid
+    fileType
+    inProgress
+    status
+    created
+    userJobCategories {
+      id
+      userJobId
+      category
+      filePath
+      downloaded
+      available
+      userJobCategoryItemClasses {
+        id
+        userJobCategoryId
+        itemClass
+        itemClassDescription
+      }
+    }
+  }
+}

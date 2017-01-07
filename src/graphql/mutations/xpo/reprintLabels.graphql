@@ -1,0 +1,6 @@
+mutation reprintLabels($sopNumber: String!) {
+  reprintLabels(sopNumber: $sopNumber) {
+    success
+    message
+  }
+}

@@ -1,0 +1,3 @@
+mutation transferItems($args: TransferFromArgs!) {
+  transferItems(args: $args)
+}

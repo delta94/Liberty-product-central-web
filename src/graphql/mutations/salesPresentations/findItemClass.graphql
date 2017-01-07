@@ -1,0 +1,7 @@
+mutation findItemClass($searchText: String!) {
+  findItemClass(searchText: $searchText) {
+    itemClass
+    itemClassDescription
+    id
+  }
+}

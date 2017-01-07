@@ -1,0 +1,15 @@
+query xpoRowsBySopNumber($sopNumber: String!) {
+  xpoRowsBySopNumber(sopNumber: $sopNumber) {
+    SopNumber
+    AdditionalPO
+    ServiceLevelCode
+    OrderLocationCode
+    ShipToName
+    Address1
+    Address2
+    Address3
+    City
+    State
+    ZipCode
+  }
+}

@@ -1,0 +1,30 @@
+query meAndVendorsForSelection {
+  getMe {
+    id
+    firstName
+    lastName
+    fullName
+    email
+    active
+    alertProductAdded
+    alertProductDiscontinued
+    alertProductUpdated
+    alertEmail
+    vendorId
+    vendor {
+      id
+      name
+      logo
+    }
+    userRoles {
+      id
+      role
+    }
+  }
+  vendors(skip: 0, pageSize: 100, searchText: "") {
+    vendors {
+      id
+      name
+    }
+  }
+}

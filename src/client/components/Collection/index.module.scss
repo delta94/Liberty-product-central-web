@@ -1,0 +1,19 @@
+@import '../../scss/mixin';
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  margin: 50px 50px;
+
+  @media (max-width: $xs-max-width) {
+    margin: auto;
+  }
+}
+
+.list {
+
+  @media (max-width: $xs-max-width) {
+    margin: 15px;
+  }
+}

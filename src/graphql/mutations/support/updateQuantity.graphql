@@ -1,0 +1,19 @@
+mutation updateQuantityStockItemsTruck($args: UpdateQuantityArgs!) {
+  updateQuantityStockItemsTruck(args: $args) {
+    data {
+      svc00701 {
+        TransferQuantity
+        QuantityFulfilled
+      }
+      svc00712 {
+        Quantity
+      }
+      svc00731 {
+        DEBITAMT
+        CRDTAMNT
+        ORDBTAMT
+        ORCRDAMT
+      }
+    }
+  }
+}

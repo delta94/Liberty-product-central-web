@@ -1,0 +1,30 @@
+.ant-form-item-children-icon {
+  position: relative !important;
+  right: 20px !important;
+}
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+.ant-menu-item a {
+  font-weight: 700;
+  color: #999 !important;
+}
+
+.ant-menu-item.ant-menu-item-selected a {
+  color: white !important;
+}
+
+.ant-modal-title {
+  font-weight: 700;
+  color: white;
+}
+
+.ant-modal-header {
+  background-color: #383c4f;
+  color: white;
+}
+
+.ant-icon.ant-icon-close.ant-modal-close-icon {
+  color: white;
+  font-weight: 700;
+}

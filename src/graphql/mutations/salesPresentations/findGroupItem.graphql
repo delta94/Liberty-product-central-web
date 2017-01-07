@@ -1,0 +1,43 @@
+mutation findGroupItem($searchText: String!, $itemClass: String!) {
+  findGroupItem(searchText: $searchText, itemClass: $itemClass) {
+    kitItem
+    kitDescription
+    cubes
+    DROPSHIP
+    DROPSHIP_Original
+    DROPSHIP_CustomPricing
+    DROPSHIP_M
+    DROPSHIP_M_Original
+    DROPSHIP_M_CustomPricing
+    DROPSHIP_X
+    DROPSHIP_X_Original
+    DROPSHIP_X_CustomPricing
+    FOB
+    FOB_Original
+    FOB_CustomPricing
+    FOB_M
+    FOB_M_Original
+    FOB_M_CustomPricing
+    LEVEL0
+    LEVEL0_Original
+    LEVEL0_CustomPricing
+    LEVEL1
+    LEVEL1_Original
+    LEVEL1_CustomPricing
+    LEVEL2
+    LEVEL2_Original
+    LEVEL2_CustomPricing
+    LEVEL3
+    LEVEL3_Original
+    LEVEL3_CustomPricing
+    MIX_FULL
+    MIX_FULL_Original
+    MIX_FULL_CustomPricing
+    MIX_HALF
+    MIX_HALF_Original
+    MIX_HALF_CustomPricing
+    MIX_QTR
+    MIX_QTR_Original
+    MIX_QTR_CustomPricing
+  }
+}

@@ -1,0 +1,10 @@
+query salesPresentations($searchText: String) {
+  salesPresentations(searchText: $searchText) {
+    presentations {
+      id
+      name
+      customerName
+    }
+    totalRows
+  }
+}

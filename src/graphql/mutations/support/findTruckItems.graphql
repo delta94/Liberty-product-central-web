@@ -1,0 +1,36 @@
+mutation findTruckItems($data: FindTruckItemsArgs!) {
+  findTruckItems(data: $data) {
+    status
+    transferLocation
+    locationCode
+    stockItems {
+      OrderDocumentId
+      ItemNumber
+      Status
+      OrderDate
+      LocationCode
+      TransferLocation
+      TransferQuantity
+      EpCubes
+      CubesExtended
+      LNITMSEQ
+    }
+    orderItems {
+      SopNumber
+      orderItems {
+        OrderDocumentId
+        ItemNumber
+        Status
+        OrderDate
+        LocationCode
+        TransferLocation
+        TransferQuantity
+        EpCubes
+        CubesExtended
+        SopDocDate
+        SopNumber
+        LNITMSEQ
+      }
+    }
+  }
+}

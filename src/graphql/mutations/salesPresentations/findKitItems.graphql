@@ -1,0 +1,23 @@
+mutation findKitItems($searchText: String!, $itemClass: String!) {
+  findKitItems(searchText: $searchText, itemClass: $itemClass) {
+    kitItem
+    kitQuantity
+    kitName
+    itemNumber
+    itemDescription
+    cubes
+    dimensions
+    FOB
+    FOB_M
+    DROPSHIP
+    DROPSHIP_M
+    DROPSHIP_X
+    LEVEL0
+    LEVEL1
+    LEVEL2
+    LEVEL3
+    MIX_FULL
+    MIX_HALF
+    MIX_QTR
+  }
+}

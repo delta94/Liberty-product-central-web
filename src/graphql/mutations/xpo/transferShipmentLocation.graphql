@@ -1,0 +1,6 @@
+mutation transferShipmentLocation($SopNumber: String!, $NewLocation: String!, $ForceUpdate: Boolean, $UpdateReadyDate: Boolean) {
+  transferShipmentLocation(SopNumber: $SopNumber, NewLocation: $NewLocation, ForceUpdate: $ForceUpdate, UpdateReadyDate: $UpdateReadyDate) {
+    success
+    message
+  }
+}

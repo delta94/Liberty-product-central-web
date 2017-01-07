@@ -1,0 +1,32 @@
+mutation addTruckItems($data: AddTruckItemsArgs!) {
+  addTruckItems(data: $data) {
+    status
+    stockItems {
+      OrderDocumentId
+      ItemNumber
+      Status
+      OrderDate
+      LocationCode
+      TransferLocation
+      TransferQuantity
+      EpCubes
+      CubesExtended
+    }
+    orderItems {
+      SopNumber
+      orderItems {
+        OrderDocumentId
+        ItemNumber
+        Status
+        OrderDate
+        LocationCode
+        TransferLocation
+        TransferQuantity
+        EpCubes
+        CubesExtended
+        SopDocDate
+        SopNumber
+      }
+    }
+  }
+}

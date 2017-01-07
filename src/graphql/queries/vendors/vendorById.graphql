@@ -1,0 +1,15 @@
+query vendorById($id: Int!) {
+  vendorById(id: $id) {
+    id
+    name
+    logo
+    vendorCategories {
+      id
+      category
+      itemClasses {
+        id
+        itemClass
+      }
+    }
+  }
+}

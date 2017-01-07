@@ -1,0 +1,413 @@
+query presentationById($id: Int!) {
+  presentationById(id: $id) {
+    id
+    userId
+    name
+    customerName
+    customerNumber
+    priceLevels {
+      id
+      priceLevel
+      displayName
+    }
+    itemClasses {
+      id
+      itemClass
+      itemClassDescription
+      itemNumbers {
+        id
+        salesPresentationId
+        itemNumber
+        FOB
+        FOB_M
+        DROPSHIP
+        DROPSHIP_M
+        DROPSHIP_X
+        LEVEL0
+        LEVEL1
+        LEVEL2
+        LEVEL3
+        MIX_FULL
+        MIX_HALF
+        MIX_QTR
+      }
+    }
+  }
+}
+
+query presentationByIdAndRelated($id: Int!, $itemClassIndex: Int!) {
+  presentationByIdAndRelated(id: $id, itemClassIndex: $itemClassIndex) {
+    presentation {
+      id
+      userId
+      name
+      customerName
+      customerNumber
+      priceLevels {
+        id
+        salesPresentationId
+        priceLevel
+        displayName
+      }
+      itemClasses {
+        id
+        itemClass
+        itemClassDescription
+      }
+    }
+    anyUnsavedItemClasses
+    presentationItemClass {
+      id
+      salesPresentationId
+      itemClass
+      itemClassDescription
+      priceAdjustment
+      priceAdjustmentTo
+      cubeAdjustment
+      cubeAdjustmentTo
+      hasBeenSaved
+      DROPSHIP
+      DROPSHIP_M
+      DROPSHIP_X
+      FOB
+      FOB_M
+      LEVEL0
+      LEVEL1
+      LEVEL2
+      LEVEL3
+      MIX_FULL
+      MIX_HALF
+      MIX_QTR
+    }
+    presentationItemClassItemNumbers {
+      id
+      salesPresentationId
+      salesPresentationItemClassId
+      displayOrder
+      itemNumber
+      itemDescription
+      cubes
+      dimensions
+      DROPSHIP
+      DROPSHIP_Original
+      DROPSHIP_CustomPricing
+      DROPSHIP_M
+      DROPSHIP_M_Original
+      DROPSHIP_M_CustomPricing
+      DROPSHIP_X
+      DROPSHIP_X_Original
+      DROPSHIP_X_CustomPricing
+      FOB
+      FOB_Original
+      FOB_CustomPricing
+      FOB_M
+      FOB_M_Original
+      FOB_M_CustomPricing
+      LEVEL0
+      LEVEL0_Original
+      LEVEL0_CustomPricing
+      LEVEL1
+      LEVEL1_Original
+      LEVEL1_CustomPricing
+      LEVEL2
+      LEVEL2_Original
+      LEVEL2_CustomPricing
+      LEVEL3
+      LEVEL3_Original
+      LEVEL3_CustomPricing
+      MIX_FULL
+      MIX_FULL_Original
+      MIX_FULL_CustomPricing
+      MIX_HALF
+      MIX_HALF_Original
+      MIX_HALF_CustomPricing
+      MIX_QTR
+      MIX_QTR_Original
+      MIX_QTR_CustomPricing
+    }
+    presentationItemClassKits {
+      kitItem
+      displayOrder
+      kitItems {
+        id
+        salesPresentationId
+        salesPresentationItemClassId
+        itemNumber
+        itemDescription
+        kitName
+        kitItem
+        kitQuantity
+        cubes
+        dimensions
+        DROPSHIP
+        DROPSHIP_Original
+        DROPSHIP_CustomPricing
+        DROPSHIP_M
+        DROPSHIP_M_Original
+        DROPSHIP_M_CustomPricing
+        DROPSHIP_X
+        DROPSHIP_X_Original
+        DROPSHIP_X_CustomPricing
+        FOB
+        FOB_Original
+        FOB_CustomPricing
+        FOB_M
+        FOB_M_Original
+        FOB_M_CustomPricing
+        LEVEL0
+        LEVEL0_Original
+        LEVEL0_CustomPricing
+        LEVEL1
+        LEVEL1_Original
+        LEVEL1_CustomPricing
+        LEVEL2
+        LEVEL2_Original
+        LEVEL2_CustomPricing
+        LEVEL3
+        LEVEL3_Original
+        LEVEL3_CustomPricing
+        MIX_FULL
+        MIX_FULL_Original
+        MIX_FULL_CustomPricing
+        MIX_HALF
+        MIX_HALF_Original
+        MIX_HALF_CustomPricing
+        MIX_QTR
+        MIX_QTR_Original
+        MIX_QTR_CustomPricing
+      }
+    }
+    presentationItemClassGroups {
+      id
+      salesPresentationId
+      salesPresentationItemClassId
+      displayOrder
+      kitItem
+      kitDescription
+      cubes
+      DROPSHIP
+      DROPSHIP_Original
+      DROPSHIP_CustomPricing
+      DROPSHIP_M
+      DROPSHIP_M_Original
+      DROPSHIP_M_CustomPricing
+      DROPSHIP_X
+      DROPSHIP_X_Original
+      DROPSHIP_X_CustomPricing
+      FOB
+      FOB_Original
+      FOB_CustomPricing
+      FOB_M
+      FOB_M_Original
+      FOB_M_CustomPricing
+      LEVEL0
+      LEVEL0_Original
+      LEVEL0_CustomPricing
+      LEVEL1
+      LEVEL1_Original
+      LEVEL1_CustomPricing
+      LEVEL2
+      LEVEL2_Original
+      LEVEL2_CustomPricing
+      LEVEL3
+      LEVEL3_Original
+      LEVEL3_CustomPricing
+      MIX_FULL
+      MIX_FULL_Original
+      MIX_FULL_CustomPricing
+      MIX_HALF
+      MIX_HALF_Original
+      MIX_HALF_CustomPricing
+      MIX_QTR
+      MIX_QTR_Original
+      MIX_QTR_CustomPricing
+    }
+    itemClassIndex
+  }
+}
+
+query presentationByIdAndPhotos($id: Int!, $itemClassIndex: Int!) {
+  presentationByIdAndPhotos(id: $id, itemClassIndex: $itemClassIndex) {
+    productData {
+      Item_Class
+      Item_Number
+      Item_Description
+      Image_1
+      Image_2
+      Image_3
+      Image_4
+      Image_5
+      Image_6
+      Image_7
+      Image_8
+      Image_9
+      Image_10
+      Image_11
+      Image_12
+      Image_13
+      Image_14
+      Image_15
+      Image_16
+      Image_17
+      Image_18
+      Image_19
+      Image_20
+    }
+    presentation {
+      id
+      name
+      customerName
+      itemClasses {
+        id
+        itemClass
+        itemClassDescription
+        hasBeenSaved
+      }
+    }
+    itemClass {
+      id
+      itemClass
+      itemClassDescription
+    }
+    itemClassIndex
+    presentationImages {
+      itemNumber
+      imageUrl
+      imageIndex
+    }
+  }
+}
+
+query presentationPdfData($id: Int!) {
+  presentationPdfData(id: $id) {
+    presentation {
+      id
+      name
+      customerName
+      priceLevels {
+        id
+        priceLevel
+        displayName
+      }
+      itemClasses {
+        id
+        itemClass
+        itemClassDescription
+        DROPSHIP
+        DROPSHIP_M
+        DROPSHIP_X
+        FOB
+        FOB_M
+        LEVEL0
+        LEVEL1
+        LEVEL2
+        LEVEL3
+        MIX_FULL
+        MIX_HALF
+        MIX_QTR
+      }
+    }
+    items {
+      itemClass {
+        id
+        itemClass
+        itemClassDescription
+        DROPSHIP
+        DROPSHIP_M
+        DROPSHIP_X
+        FOB
+        FOB_M
+        LEVEL0
+        LEVEL1
+        LEVEL2
+        LEVEL3
+        MIX_FULL
+        MIX_HALF
+        MIX_QTR
+      }
+      itemClassFeatures {
+        itemClass
+        itemClassDescription
+        category
+        Feature_1
+        Feature_2
+        Feature_3
+        Feature_4
+        Feature_5
+        Feature_6
+        Feature_7
+        Feature_8
+        Feature_9
+        Feature_10
+        Feature_11
+        Feature_12
+        Feature_13
+        Feature_14
+        Feature_15
+      }
+      itemClassKits {
+        itemNumber
+        itemDescription
+        items {
+          itemNumber
+          itemDescription
+          cubes
+          kitQuantity
+          dimensions
+          DROPSHIP
+          DROPSHIP_M
+          DROPSHIP_X
+          FOB
+          FOB_M
+          LEVEL0
+          LEVEL1
+          LEVEL2
+          LEVEL3
+          MIX_FULL
+          MIX_HALF
+          MIX_QTR
+        }
+      }
+      itemClassItemNumbers {
+        itemNumber
+        itemDescription
+        cubes
+        dimensions
+        DROPSHIP
+        DROPSHIP_M
+        DROPSHIP_X
+        FOB
+        FOB_M
+        LEVEL0
+        LEVEL1
+        LEVEL2
+        LEVEL3
+        MIX_FULL
+        MIX_HALF
+        MIX_QTR
+      }
+      itemClassGroups {
+        itemNumber
+        itemDescription
+        cubes
+        DROPSHIP
+        DROPSHIP_M
+        DROPSHIP_X
+        FOB
+        FOB_M
+        LEVEL0
+        LEVEL1
+        LEVEL2
+        LEVEL3
+        MIX_FULL
+        MIX_HALF
+        MIX_QTR
+      }
+      itemClassImages {
+        itemNumber
+        imageUrl
+        imageIndex
+      }
+    }
+  }
+}

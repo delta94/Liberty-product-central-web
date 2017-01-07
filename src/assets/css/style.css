@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/font/MyriadPro-Regular.woff2') format('woff2'), url('/font/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/********header area************/
+.header-area {
+  /* overflow: hidden; */
+  padding: 15px 0;
+  background: #f5f5f5;
+  box-shadow: 0 5px 20px #d7d7d7;
+  z-index: 999;
+  position: relative;
+}
+.logo-area img {
+  width: auto;
+  height: 42px;
+}
+.join-area ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.join-area ul li a {
+  color: #019bf6;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 30px;
+  text-decoration: none;
+  padding-top: 10px;
+  display: block;
+}
+
+/**********banner area*************/
+.banner-area {
+  background: url(/asset/img/bg/1.jpg) no-repeat 0 0 / 100% 100%;
+  overflow: hidden;
+  padding: 40px 0 120px 0;
+  box-shadow: 0 14px 30px -14px #ccc;
+}
+.banner-content-area {
+  text-align: center;
+}
+.banner-content-area h2 {
+  color: #019bf6;
+  font-weight: 700;
+  font-size: 44px;
+}
+.banner-content-area h2 span {
+  color: #000000;
+  text-transform: uppercase;
+}
+.banner-content-area p iframe {
+  max-width: 550px;
+  height: 370px;
+  padding-top: 60px;
+  width: 100%;
+}
+
+/*********hotels area**********/
+.hotels-area {
+  overflow: hidden;
+  padding: 30px 0;
+}
+.hotels-picture-area {
+  width: 70%;
+  float: left;
+  overflow: hidden;
+}
+.hotels-picture-area img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.hotels-text-area h2 {
+  background: url(/asset/img/bg/2.png) no-repeat 0 0 / 100% 100%;
+  font-size: 24px;
+  color: #fff;
+  line-height: 32px;
+  font-weight: 500;
+}
+.hotels-text-area p {
+  width: 61%;
+  margin: auto;
+  color: #000000;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  padding-right: 30px;
+}
+.button {
+  text-align: center;
+}
+.button a {
+  background: #019bf6;
+  padding: 9px 40px;
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+/*********magazine area*********/
+.magazine-area {
+  overflow: hidden;
+}
+.magazine-area img {
+  width: 100%;
+  height: auto;
+}
+
+/********cruises area***********/
+.cruises-area {
+  overflow: hidden;
+  padding: 30px 0;
+}
+.cruises-picture-area img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.cruises-item2 {
+  display: none;
+}
+.cruises-text-area {
+  margin-right: -90px;
+  margin-top: 25px;
+}
+.cruises-text-area h2 {
+  background: url(/asset/img/bg/4.png) no-repeat 0 0 / 100% 100%;
+  font-size: 22px;
+  color: #fff;
+  padding: 30px 88px 30px 80px;
+  line-height: 31px;
+  font-weight: 500;
+}
+.cruises-text-area p {
+  width: 55%;
+  margin: auto;
+  color: #000000;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  margin-left: 80px;
+}
+
+/**********features area************/
+.main-features-area {
+  overflow: hidden;
+  padding: 30px 0;
+  background: #f5f5f5;
+}
+.features-area {
+  text-align: center;
+}
+.features-heading {
+  width: 70%;
+  margin: auto;
+  background: url(/asset/img/bg/2.png) no-repeat 0 0 / 100% 100%;
+  padding: 30px 0;
+}
+.features-heading h2 {
+  font-size: 24px;
+  color: #fff;
+  line-height: 32px;
+  font-weight: 500;
+  width: 42%;
+  margin: auto;
+}
+.feature-item-area {
+  overflow: hidden;
+  width: 60%;
+  margin: auto;
+}
+.feature-item-area2 {
+  overflow: hidden;
+  width: 50%;
+  margin: auto;
+}
+.features-single-item {
+  width: 30%;
+  float: left;
+  margin: 0 11px;
+  padding-bottom: 40px;
+}
+.features-single-item p {
+  font-size: 20px;
+  font-weight: 300;
+  width: 78%;
+  margin: auto;
+  padding-top: 14px;
+}
+.features-single-item img {
+  width: auto;
+  height: 45px;
+}
+.item2 {
+  width: 45% !important;
+  float: left;
+  padding-top: 30px;
+}
+
+/**********phone area*************/
+.phone-area {
+  background: #f5f5f5;
+}
+.phone-text-area {
+  padding-top: 50px;
+}
+.phone-text-area .button {
+  margin-top: 50px;
+}
+.Gradient_Map_1 {
+  background-image: url('Gradient Map 1.png');
+  position: absolute;
+  left: -35px;
+  top: -35px;
+  width: 1990px;
+  height: 895px;
+  z-index: 100;
+}
+
+/**********footer area************/
+.footer-area {
+  overflow: hidden;
+  padding: 30px 0;
+}
+.copyright-area p {
+  color: #000000;
+  font-family: 'Myriad Pro';
+  font-weight: 400;
+  font-size: 16px;
+}
+.copyright-area span {
+  padding: 0 3px;
+}

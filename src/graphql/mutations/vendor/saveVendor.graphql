@@ -1,0 +1,18 @@
+mutation saveVendor($data: VendorInput!) {
+  saveVendor(data: $data) {
+    id
+    name
+    logo
+    vendorCategories {
+      id
+      vendorId
+      category
+      itemClasses {
+        id
+        vendorId
+        vendorCategoryId
+        itemClass
+      }
+    }
+  }
+}

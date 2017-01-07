@@ -1,0 +1,24 @@
+mutation saveUserJob($data: UserJobInput!) {
+  saveUserJob(data: $data) {
+    id
+    userId
+    vendorId
+    fileType
+    inProgress
+    status
+    userJobCategories {
+      id
+      userJobId
+      category
+      filePath
+      downloaded
+      available
+      created
+      userJobCategoryItemClasses {
+        id
+        userJobCategoryId
+        itemClass
+      }
+    }
+  }
+}

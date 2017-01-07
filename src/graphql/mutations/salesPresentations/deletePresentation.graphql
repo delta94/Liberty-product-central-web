@@ -1,0 +1,6 @@
+mutation deletePresentation($id: Int!) {
+  deletePresentation(id: $id) {
+    success
+    message
+  }
+}

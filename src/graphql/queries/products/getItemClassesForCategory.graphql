@@ -1,0 +1,12 @@
+query getItemClassesForCategories($categories: [String!]!) {
+  getItemClassesForCategories(categories: $categories) {
+    groups {
+      category
+      itemClasses {
+        category
+        itemClass
+        itemClassDescription
+      }
+    }
+  }
+}

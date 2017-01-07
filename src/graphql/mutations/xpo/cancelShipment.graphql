@@ -1,0 +1,6 @@
+mutation cancelShipment($sopNumber: String!) {
+  cancelShipment(sopNumber: $sopNumber) {
+    success
+    message
+  }
+}

@@ -1,0 +1,53 @@
+.productWrapper {
+  .ant-steps-item {
+    &.ant-steps-item-process {
+      .ant-steps-item-content {
+        .ant-steps-item-title {
+          color: white !important;
+          font-weight: 800;
+        }
+        .ant-steps-item-description {
+          color: white !important;
+        }
+      }
+    }
+    &.ant-steps-item-finish {
+      .ant-steps-item-content {
+        .ant-steps-item-title {
+          color: white;
+          font-weight: 800;
+        }
+        .ant-steps-item-description {
+          color: #7b7b7b;
+        }
+      }
+    }
+    &.ant-steps-item-wait {
+      .ant-steps-item-content {
+        .ant-steps-item-title {
+          color: #7b7b7b;
+          font-weight: 800;
+        }
+        .ant-steps-item-description {
+          color: #7b7b7b;
+        }
+      }
+    }
+  }
+
+  .ant-collapse {
+    .ant-collapse-item {
+      .ant-collapse-header {
+        font-weight: 800;
+        color: #383c4f;
+      }
+    }
+  }
+
+  i.selected {
+    font-size: 36px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+  }
+}

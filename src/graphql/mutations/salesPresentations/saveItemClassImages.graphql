@@ -1,0 +1,31 @@
+mutation saveItemClassImages($data: SalesPresentationItemClassImageInput!) {
+  saveItemClassImages(data: $data) {
+    presentation {
+      id
+      userId
+      name
+      customerName
+      customerNumber
+      priceLevels {
+        id
+        priceLevel
+        displayName
+      }
+      itemClasses {
+        id
+        itemClass
+        priceAdjustment
+        cubeAdjustment
+        itemNumbers {
+          itemNumber
+          itemDescription
+        }
+      }
+    }
+    itemClassIndex
+    itemClass {
+      id
+      itemClass
+    }
+  }
+}

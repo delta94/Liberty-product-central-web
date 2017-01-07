@@ -1,0 +1,41 @@
+.ant-card.kit-item {
+  margin: 0 !important;
+  .ant-card-head {
+    background-color: #eee;
+  }
+  .ant-tabs-tab {
+    font-weight: 700;
+  }
+  .ant-collapse-header {
+    font-weight: 700;
+    background-color: #eee;
+  }
+}
+
+.ant-row.ant-form-item {
+  margin-bottom: 7px;
+}
+
+.ant-collapse-header {
+  font-weight: 700;
+  background-color: rgb(56, 60, 79);
+  color: white !important;
+  margin-bottom: 10px;
+}
+
+.ant-anchor {
+  padding: 0;
+}
+
+.ant-anchor-ink {
+  display: none;
+}
+
+.ant-btn.header-button {
+  margin: 0 5px !important;
+  font-weight: 700;
+  width: 180px;
+  span {
+    position: relative;
+  }
+}

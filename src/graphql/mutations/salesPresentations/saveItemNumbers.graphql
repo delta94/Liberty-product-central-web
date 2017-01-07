@@ -1,0 +1,24 @@
+mutation saveItemNumbers($data: SaveItemNumbersInput!) {
+  saveItemNumbers(data: $data) {
+    id
+    userId
+    name
+    customerName
+    customerNumber
+    priceLevels {
+      id
+      priceLevel
+      displayName
+    }
+    itemClasses {
+      id
+      itemClass
+      priceAdjustment
+      cubeAdjustment
+      itemNumbers {
+        itemNumber
+        itemDescription
+      }
+    }
+  }
+}

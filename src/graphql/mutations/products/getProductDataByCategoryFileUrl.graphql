@@ -1,0 +1,5 @@
+mutation getProductDataByCategoryFileUrl($category: String!) {
+  getProductDataByCategoryFileUrl(category: $category) {
+    url
+  }
+}

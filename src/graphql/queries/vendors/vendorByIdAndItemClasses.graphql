@@ -1,0 +1,28 @@
+query vendorByIdAndItemClasses($id: Int!, $categories: [String!]!) {
+  vendorById(id: $id) {
+    id
+    name
+    logo
+    vendorCategories {
+      id
+      vendorId
+      category
+      itemClasses {
+        id
+        vendorId
+        vendorCategoryId
+        itemClass
+      }
+    }
+  }
+  getItemClassesForCategories(categories: $categories) {
+    groups {
+      category
+      itemClasses {
+        category
+        itemClass
+        itemClassDescription
+      }
+    }
+  }
+}

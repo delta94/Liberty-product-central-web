@@ -1,0 +1,46 @@
+@import '../../scss/mixin';
+
+.wrapper {
+  width: 100%;
+  padding: 30px;
+
+  @media (max-width: $xs-max-width) {
+    margin: auto;
+  }
+}
+
+.list {
+  @media (max-width: $xs-max-width) {
+    padding: 15px;
+  }
+}
+
+.download {
+  margin-bottom: 15;
+  align-items: center;
+
+  @media (max-width: $xs-max-width) {
+    flex-direction: column-reverse;
+  }
+}
+
+.downloadButton {
+  width: 300px;
+  font-weight: 800;
+
+  @media (max-width: $xs-max-width) {
+    width: auto;
+    margin: 10px auto 15px auto;
+  }
+}
+
+.description {
+  font-weight: 800;
+  font-size: 16px;
+  color: #383c4f;
+
+  @media (max-width: $xs-max-width) {
+    margin: auto;
+    font-size: 13px;
+  }
+}

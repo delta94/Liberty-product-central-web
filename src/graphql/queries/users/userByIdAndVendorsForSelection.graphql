@@ -1,0 +1,25 @@
+query userByIdAndVendorsForSelection($id: Int!) {
+  userById(id: $id) {
+    id
+    firstName
+    lastName
+    email
+    active
+    alertProductAdded
+    alertProductDiscontinued
+    alertProductUpdated
+    alertEmail
+    vendor {
+      id
+      name
+      logo
+    }
+    userRoles
+  }
+  vendors(skip: 0, pageSize: 100, searchText: "") {
+    vendors {
+      id
+      name
+    }
+  }
+}

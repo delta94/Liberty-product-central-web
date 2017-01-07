@@ -1,0 +1,38 @@
+@import '../../scss/mixin';
+
+.row-class {
+  &:hover,
+  &.active {
+    .cls-1 {
+      fill: white !important;
+    }
+    .cls-2 {
+      fill: white !important;
+    }
+    .cls-3 {
+      fill: white !important;
+    }
+    .cls-4 {
+      fill: white !important;
+    }
+  }
+}
+
+.cls-1 {
+  fill: #383c4f !important;
+}
+.cls-2 {
+  fill: #383c4f !important;
+}
+.cls-3 {
+  fill: #383c4f !important;
+}
+.cls-4 {
+  fill: #383c4f !important;
+}
+
+.ant-col-offset-1 {
+  @media (max-width: $xs-max-width) {
+    margin: auto;
+  }
+}
